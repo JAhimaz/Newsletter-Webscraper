@@ -1,7 +1,4 @@
-from attr import attr
 from bs4 import BeautifulSoup # Used for webscraping
-import lxml # Helps with web performance
-import cchardet # Required by LXML
 import re # For creating REGEX formulas
 
 from timeit import default_timer as timer

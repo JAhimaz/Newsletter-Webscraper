@@ -1,14 +1,9 @@
 # Scraping Tools
-from ssl import SSLError
 import requests # Used for getting each webpage that can be further used for BeautifulSoup
 from time import time
-from async_timeout import timeout
 from requests_html import HTMLSession
 from bs4 import BeautifulSoup # Used for webscraping
 
-import lxml # Helps with web performance
-import cchardet # Required by LXML
-import re # For creating REGEX formulas
 import random
 
 from timeit import default_timer as timer
