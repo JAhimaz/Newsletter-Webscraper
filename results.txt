@@ -1,0 +1,26 @@
+URL, Has Newsletter, Time Taken
+https://gubagoo.com/, Yes, 4.525488
+http://vendsol.com/, Yes, 4.204881
+https://vertagear.com/, Yes, 0.977732
+https://chandigarhcity.com/, Yes, 12.711013
+https://jtc.gov.sg/, Yes, 0.532384
+https://geekstechs.org/, Yes, 7.421613
+https://aperfectcircle.com/, Yes, 3.732975
+https://crimsonav.com/, Yes, 1.099022
+https://stormlikes.com/, Yes, 0.481809
+https://globalmediainsight.com/, Yes, 7.919959
+https://gridinsoft.com/, Yes, 6.637369
+http://synthroid911.com/, Yes, 0.730065
+https://toplevelfaucet.website/, Yes, 2.146894
+https://thinkexam.com, Yes, 8.696009
+https://norcocollege.edu/Pages/Welcome.aspx, Yes, 7.865141
+http://leadgenetics.in/, Yes, 7.610455
+https://resumesplanet.com/, Yes, 12.859355
+https://wilberforce.edu/, Yes, 8.744047
+https://tix123.com/, Yes, 6.168063
+URL, Has Newsletter, Time Taken
+https://zetarmold.com/, Yes, 9.661814
+https://source-forum.com/, Yes, 4.130801
+https://clarencekitchendesign.com/, Yes, 5.571781
+https://cyracom.com/, Yes, 4.18925
+http://checkfortalent.com/, Yes, 15.020424
