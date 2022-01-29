@@ -18,11 +18,23 @@ from datetime import timedelta
 # Modules
 import scraperFunc as sf
 
+# Overwrite Results (This will overwrite the results.csv upon start)
+overwriteResults = True
+
 # Imports the URLS provided to check
 urls = open("./urls.txt", "r").read().splitlines()
 
 # Imports the list of Keywords to check for in Rule 5
 keywords = open("./keywords.txt", "r").read().splitlines()
+
+# Checks if the file exists, if it does, remove the current results.
+if(overwriteResults):
+    try:
+        file = open("results.csv","r+")
+        file.truncate(0)
+        file.close()
+    except:
+        print("[No results.csv found]")
 
 # Creates a HTMLSession 
 session = HTMLSession()
@@ -112,7 +124,7 @@ def scrapeSite(url):
 
     return "No"
 
-with open('results.txt', 'a') as the_file:
+with open('results.csv', 'a') as the_file:
     the_file.write(f'URL, Has Newsletter, Time Taken\n')
 
 def main():
@@ -124,7 +136,7 @@ def main():
 
         timeTaken = "%s" % timedelta(seconds=end-start).total_seconds()
 
-        with open('results.txt', 'a') as the_file:
+        with open('results.csv', 'a') as the_file:
             the_file.write(f'{url}, {hasNewsLetter}, {timeTaken}\n')
         print(f"######")
 main()
