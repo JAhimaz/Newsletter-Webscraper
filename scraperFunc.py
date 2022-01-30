@@ -13,6 +13,7 @@ def checkBlocks(parse):
         return [True, "FORBIDDEN PAGE"]
     
     if(parse.find("title", text=re.compile('.*cloudflare.*', re.I))
+    or parse.find("span", text=re.compile('.*Checking your browser before accessing.*', re.I))
     ):
         print("True", end="\n")
         return [True, "CloudFlare Protected"]
