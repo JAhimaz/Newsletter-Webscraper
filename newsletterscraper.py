@@ -54,7 +54,7 @@ def scrapeSite(url):
 
     try:
         # page = requests.get(url, headers=headers, timeout=10)
-        resp = session.get(url, headers=headers, allow_redirects=True)
+        resp = session.get(url, headers=headers, allow_redirects=True, timeout=15)
         # resp.html.render(timeout=5)
     except requests.exceptions.SSLError:
         return "Error (SSL)"
@@ -69,7 +69,10 @@ def scrapeSite(url):
     except:
         return "Error"
 
-    parse = BeautifulSoup(resp.html.html, 'lxml')
+    try:
+        parse = BeautifulSoup(resp.html.html, 'lxml')
+    except:
+        return "Error"
 
     # print(parse)
 
@@ -119,8 +122,9 @@ def scrapeSite(url):
 
     return "No"
 
-with open('results.csv', 'a') as the_file:
-    the_file.write(f'URL, Has Newsletter, Time Taken\n')
+if(overwriteResults):
+    with open('results.csv', 'a') as the_file:
+        the_file.write(f'URL, Has Newsletter, Time Taken\n')
 
 def main():
     for url in urls:
