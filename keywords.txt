@@ -13,7 +13,7 @@ fb/a/mailverify
 get email updates
 follow blog via email
 mailing list
-newsletters
+newsletter
 Sign Up for Action Alerts
 news updates
 newsletter-subscription
